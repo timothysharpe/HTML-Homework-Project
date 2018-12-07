@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+<head>
+    <meta charset='utf-8'>
+    <title>Web Visualization Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Latitude Analysis</a>
+          </div>
+        <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="MaxTemperatures.html">Max Temperature</a></li>
+                          <li><a href="Humidity.html">Humidity</a></li>
+                          <li><a href="Cloudiness.html">Cloudiness</a></li>
+                          <li><a href="WindSpeed.html">Wind Speed</a></li>
+                        </ul>
+                      </li>
+                <li>
+                    <a href="Comparisons.html"></span>Comparison</a></li>
+                <li>
+                    <a href="Data.html"></span>Data</a></li>
+        </ul>
+        </div>
+  </nav>
+    <div class="container">
+            <div class="row">
+             <div class="col-md-1"></div>  
+               <div class="col-md-6">
+              <h1>Latitude vs. Max Temperatures</h1>
+    <p>The following plot shows the correlation between city location based on latitude, and the maximum temperature recorded in that city; then, that is plotted to against the other cities in the data set.</p>
+    <img src='MaxTemperatures.png' width="600px" height="475px" alt="Max Temp vs Latitude" />
+    <p>The data shows that the closer to 0° latitude a city is, the higher the max temperature is. 0° is on the equator, and the farther you go from the equator the lower the average temperature is.</p>
+    <p>The data in this analysis was collected using Python plug-ins such as Pandas for formatting, and Matplot for plotting.</p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script> 

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+<head>
+    <meta charset='utf-8'>
+    <title>Web Visualization Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">Latitude Analysis</a>
+        </div>
+      <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="MaxTemperatures.html">Max Temperature</a></li>
+                        <li><a href="Humidity.html">Humidity</a></li>
+                        <li><a href="Cloudiness.html">Cloudiness</a></li>
+                        <li><a href="WindSpeed.html">Wind Speed</a></li>
+                      </ul>
+                    </li>
+              <li>
+                  <a href="Comparisons.html"></span>Comparison</a></li>
+              <li>
+                  <a href="Data.html"></span>Data</a></li>
+      </ul>
+      </div>
+</nav>
+    <div class="container">
+            <div class="row">
+             <div class="col-md-1"></div>  
+               <div class="col-md-6">
+              <h1>Summary</h1>
+    <p>The purpose of this data analysis was to analyze and plot temperature changes depending on latitutde in relation to the equator.</p>
+    <img src='https://sites.google.com/site/ljjcivilization/_/rsrc/1323883242808/home/lattitrude-and-longitude/latitudelongitude.jpg' width="450px" height="300px" alt="Latitude Globe Map" />
+    <p>The data in this analysis was collected using Python plug-ins such as Pandas for formatting, and Matplot for plotting.</p>
+    </div>
+    <div class="col-md-4 sidebar">
+            <div class="row">
+              <div class="col-md-12">
+                <h1>Visualizations</h1>
+                <p> Click on a plot to explore the analysis.</p>
+              </div>
+            </div>
+           <div class="row">
+    
+              <div class="col-md-3">    
+                   <a href="MaxTemperatures.html">Temperatures<img src="MaxTemperatures.png" width="200px" height="150px"></a>
+              </div>
+              <div class="col-md-3"></div>
+            
+              <div class="col-md-3">  
+                   <a href="Humidity.html">Humidity<img src="Humidity.png" width="200px" height="150px"></a>
+              </div>
+              <div class="col-md-3"></div>  
+           </div>   
+           <div class ="row"> 
+              
+              <div class="col-md-3">  
+                <a href="Cloudiness.html">Cloudiness<img src="Cloudiness.png" width="200px" height="150px"></a>
+              </div>
+              <div class="col-md-3"></div>
+    
+              <div class="col-md-3">     
+                <a href="WindSpeed.html">WindSpeed<img src="WindSpeed.png" width="200px" height="150px"></a>
+              </div>
+              <div class="col-md-3"></div>
+            </div>    
+         </div>         
+        <div class="col-md-1"></div>
+      </div>      
+    </div>	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>  
+</body>
+</html>
